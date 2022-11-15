@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
-options: "3c98b808d73b705359e46f3930795b5078e8463dbbd0b9358bb040f17736b6a2"
-build_start_time: [1668517293, 185250043]
-build_end_time: [1668517297, 672549009]
+options: "a7af8389d333e90da389dc8272892b138e711a3d54a20781da4b040b32891720"
+build_start_time: [1668521265, 1443862]
+build_end_time: [1668521265, 25832176]
 inputs:
-  "/Users/user/my_app_desktop/macos/Flutter/GeneratedPluginRegistrant.swift": [1668517284, 286229372]
-  "/Users/user/my_app_desktop/macos/Runner/AppDelegate.swift": [1668016546, 0]
-  "/Users/user/my_app_desktop/macos/Runner/MainFlutterWindow.swift": [1668016546, 0]
+  "/Users/user/my_app_desktop/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1668517284, 286229372]
+  "/Users/user/my_app_desktop/macos/Runner/AppDelegate.swift": !private [1668016546, 0]
+  "/Users/user/my_app_desktop/macos/Runner/MainFlutterWindow.swift": !private [1668016546, 0]
