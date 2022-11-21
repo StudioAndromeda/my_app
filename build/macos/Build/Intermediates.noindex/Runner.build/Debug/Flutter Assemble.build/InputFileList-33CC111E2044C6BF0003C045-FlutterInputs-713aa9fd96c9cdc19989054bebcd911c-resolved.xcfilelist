@@ -1,3 +1,9 @@
+/Users/user/flutter/.pub-cache/git/flutter-desktop-embedding-17d4710c17f4913137e7ec931f6e71eaef443363/plugins/window_size/LICENSE
+/Users/user/flutter/.pub-cache/git/flutter-desktop-embedding-17d4710c17f4913137e7ec931f6e71eaef443363/plugins/window_size/lib/src/platform_window.dart
+/Users/user/flutter/.pub-cache/git/flutter-desktop-embedding-17d4710c17f4913137e7ec931f6e71eaef443363/plugins/window_size/lib/src/screen.dart
+/Users/user/flutter/.pub-cache/git/flutter-desktop-embedding-17d4710c17f4913137e7ec931f6e71eaef443363/plugins/window_size/lib/src/window_size_channel.dart
+/Users/user/flutter/.pub-cache/git/flutter-desktop-embedding-17d4710c17f4913137e7ec931f6e71eaef443363/plugins/window_size/lib/src/window_size_utils.dart
+/Users/user/flutter/.pub-cache/git/flutter-desktop-embedding-17d4710c17f4913137e7ec931f6e71eaef443363/plugins/window_size/lib/window_size.dart
 /Users/user/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/LICENSE
 /Users/user/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/LICENSE
 /Users/user/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.1/LICENSE
@@ -642,5 +648,6 @@
 /Users/user/flutter/packages/flutter_tools/lib/src/build_system/targets/common.dart
 /Users/user/flutter/packages/flutter_tools/lib/src/build_system/targets/icon_tree_shaker.dart
 /Users/user/flutter/packages/flutter_tools/lib/src/build_system/targets/macos.dart
+/Users/user/my_app_desktop/lib/color_schemes.g.dart
 /Users/user/my_app_desktop/lib/main.dart
 /Users/user/my_app_desktop/pubspec.yaml
