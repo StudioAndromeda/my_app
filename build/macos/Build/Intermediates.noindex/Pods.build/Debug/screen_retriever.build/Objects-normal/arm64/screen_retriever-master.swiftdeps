@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "bb940a55fcb564bb8d296d9bec1fb3f69902df9bdb732774843babba99d4bc17"
+build_start_time: [1669377928, 323869943]
+build_end_time: [1669377934, 791403055]
+inputs:
+  "/Users/user/flutter/.pub-cache/hosted/pub.dartlang.org/screen_retriever-0.1.4/macos/Classes/ScreenRetrieverPlugin.swift": [1669356995, 981342315]

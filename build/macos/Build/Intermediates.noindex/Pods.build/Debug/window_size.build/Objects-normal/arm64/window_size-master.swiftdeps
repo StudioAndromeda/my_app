@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
-options: "eb35fbdb670ad8015a7182e32aee53b5337fb9abf82dc3fbc664de133a6673a6"
-build_start_time: [1669036309, 180849075]
-build_end_time: [1669036315, 610471010]
-inputs:
-  ? "/Users/user/flutter/.pub-cache/git/flutter-desktop-embedding-17d4710c17f4913137e7ec931f6e71eaef443363/plugins/window_size/macos/Classes/WindowSizePlugin.swift"
-  : [1668992768, 950433731]

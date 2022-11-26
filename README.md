@@ -1,4 +1,4 @@
-# my_app_desktop
+# blueberry
 
 A new Flutter project.
 
