@@ -1,9 +1,12 @@
+import 'package:blueberry/src/navigation/home_banner.dart';
+import 'package:blueberry/src/navigation/recipe_card.dart';
 import 'package:flutter/material.dart';
 import 'package:sidebarx/sidebarx.dart';
 import 'package:blueberry/src/navigation/sidebar.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:flutter/foundation.dart';
 import 'package:url_strategy/url_strategy.dart';
+import 'package:blueberry/src/pages/recipes.dart';
 
 bool get isDesktop {
   if (kIsWeb) return false;
@@ -127,17 +130,20 @@ class _ScreensExample extends StatelessWidget {
         final pageTitle = _getTitleByIndex(controller.selectedIndex);
         switch (controller.selectedIndex) {
           case 0:
-            return ListView.builder(
-              padding: const EdgeInsets.only(top: 10),
-              itemBuilder: (context, index) => const RecipeCard(
-                title: 'My recipe',
-                rating: '4.9',
-                cookTime: '30 min',
-                thumbnailUrl:
-                    'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528',
-              ),
+            return const HomeBanner(
+              title: 'Bienvenue Nicolas !',
+              cookTime: 'cookTime',
+              rating: 'rating',
+              thumbnailUrl: 'assets/images/background.jpg',
             );
           case 1:
+            return Text(
+              pageTitle,
+              style: theme.textTheme.headlineSmall,
+            );
+          case 2:
+            return const RecipesPage();
+          case 3:
             return ListView.builder(
               padding: const EdgeInsets.only(top: 10),
               itemBuilder: (context, index) => const RecipeCard(
@@ -148,6 +154,7 @@ class _ScreensExample extends StatelessWidget {
                     'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528',
               ),
             );
+
           default:
             return Text(
               pageTitle,
@@ -181,119 +188,3 @@ String _getTitleByIndex(int index) {
 }
 
 const primaryColor = Color(0xFF685BFF);
-const canvasColor = Color(0xFF2E2E48);
-const scaffoldBackgroundColor = Color(0xFF464667);
-const accentCanvasColor = Color(0xFF3E3E61);
-const white = Colors.white;
-final actionColor = const Color(0xFF5F5FA7).withOpacity(0.6);
-final divider = Divider(color: white.withOpacity(0.3), height: 1);
-
-class RecipeCard extends StatelessWidget {
-  final String title;
-  final String rating;
-  final String cookTime;
-  final String thumbnailUrl;
-  const RecipeCard({
-    super.key,
-    required this.title,
-    required this.cookTime,
-    required this.rating,
-    required this.thumbnailUrl,
-  });
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
-      width: MediaQuery.of(context).size.width,
-      height: 180,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.6),
-            offset: const Offset(
-              0.0,
-              10.0,
-            ),
-            blurRadius: 10.0,
-            spreadRadius: -6.0,
-          ),
-        ],
-        image: DecorationImage(
-          colorFilter: ColorFilter.mode(
-            Colors.black.withOpacity(0.35),
-            BlendMode.multiply,
-          ),
-          image: NetworkImage(thumbnailUrl),
-          fit: BoxFit.cover,
-        ),
-      ),
-      /*child: Stack(
-        children: [
-          Align(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5.0),
-              child: Text(
-                title,
-                style: const TextStyle(
-                  fontSize: 19,
-                ),
-                overflow: TextOverflow.ellipsis,
-                maxLines: 2,
-                textAlign: TextAlign.center,
-              ),
-            ),
-            alignment: Alignment.center,
-          ),
-          Align(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(5),
-                  margin: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.4),
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.star,
-                        color: Colors.yellow,
-                        size: 18,
-                      ),
-                      const SizedBox(width: 7),
-                      Text(rating),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(5),
-                  margin: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.4),
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.schedule,
-                        color: Colors.yellow,
-                        size: 18,
-                      ),
-                      const SizedBox(width: 7),
-                      Text(cookTime),
-                    ],
-                  ),
-                )
-              ],
-            ),
-            alignment: Alignment.bottomLeft,
-          ),
-        ],
-      ), */
-    );
-  }
-}
