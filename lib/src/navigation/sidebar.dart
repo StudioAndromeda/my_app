@@ -101,7 +101,7 @@ class Sidebar extends StatelessWidget {
 
 const primaryColor = Color(0xFF685BFF);
 const canvasColor = Color.fromARGB(255, 0, 0, 0);
-const scaffoldBackgroundColor = Color.fromARGB(255, 24, 24, 24);
+const scaffoldBackgroundColor = Color.fromARGB(255, 18, 18, 18);
 const accentCanvasColor = Color.fromARGB(255, 45, 45, 45);
 const white = Colors.white;
 final actionColor = const Color.fromARGB(255, 38, 38, 38).withOpacity(0.6);

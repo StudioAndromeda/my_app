@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
 options: "7c6267d9dab75b69b9a1d54fd2b9ea41cfd14e43608ef681e4278dba525eaa93"
-build_start_time: [1669377928, 323869943]
-build_end_time: [1669377928, 347720146]
+build_start_time: [1669771483, 440448045]
+build_end_time: [1669771483, 464126110]
 inputs:
   "/Users/user/flutter/.pub-cache/hosted/pub.dartlang.org/window_manager-0.2.7/macos/Classes/SubWindow.swift": !private [1669341537, 609678745]
   "/Users/user/flutter/.pub-cache/hosted/pub.dartlang.org/window_manager-0.2.7/macos/Classes/WindowManager.swift": !private [1669341537, 610774517]

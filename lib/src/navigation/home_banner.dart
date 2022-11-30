@@ -18,7 +18,7 @@ class HomeBanner extends StatelessWidget {
       alignment: Alignment.topCenter,
       margin: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
       width: MediaQuery.of(context).size.width,
-      height: 380.0,
+      height: 280.0,
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(15),

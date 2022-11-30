@@ -1,11 +1,14 @@
-import 'package:blueberry/src/navigation/home_banner.dart';
 import 'package:blueberry/src/navigation/recipe_card.dart';
+import 'package:blueberry/src/navigation/sidebar.dart';
+
 import 'package:flutter/material.dart';
 import 'package:sidebarx/sidebarx.dart';
-import 'package:blueberry/src/navigation/sidebar.dart';
+
 import 'package:window_manager/window_manager.dart';
 import 'package:flutter/foundation.dart';
 import 'package:url_strategy/url_strategy.dart';
+
+import 'package:blueberry/src/pages/home.dart';
 import 'package:blueberry/src/pages/recipes.dart';
 
 bool get isDesktop {
@@ -66,10 +69,21 @@ class MyApp extends StatelessWidget {
         canvasColor: canvasColor,
         scaffoldBackgroundColor: scaffoldBackgroundColor,
         textTheme: const TextTheme(
-          headlineSmall: TextStyle(
+          headline1: TextStyle(
             color: Colors.white,
-            fontSize: 46,
-            fontWeight: FontWeight.w800,
+            fontSize: 32.0,
+            fontWeight: FontWeight.bold,
+          ),
+          headline2: TextStyle(
+            color: Colors.white,
+            fontSize: 28.0,
+            fontWeight: FontWeight.bold,
+          ),
+          bodyText1: TextStyle(
+            color: Colors.white,
+          ),
+          bodyText2: TextStyle(
+            color: Colors.white,
           ),
         ),
       ),
@@ -130,16 +144,11 @@ class _ScreensExample extends StatelessWidget {
         final pageTitle = _getTitleByIndex(controller.selectedIndex);
         switch (controller.selectedIndex) {
           case 0:
-            return const HomeBanner(
-              title: 'Bienvenue Nicolas !',
-              cookTime: 'cookTime',
-              rating: 'rating',
-              thumbnailUrl: 'assets/images/background.jpg',
-            );
+            return const HomePage();
           case 1:
             return Text(
               pageTitle,
-              style: theme.textTheme.headlineSmall,
+              style: theme.textTheme.headline2,
             );
           case 2:
             return const RecipesPage();
@@ -158,7 +167,7 @@ class _ScreensExample extends StatelessWidget {
           default:
             return Text(
               pageTitle,
-              style: theme.textTheme.headlineSmall,
+              style: theme.textTheme.headline2,
             );
         }
       },

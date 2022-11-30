@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
 options: "58c434326d7fc205354e8176fd7a1210c86d25ec6039fce94dd67cb95d3759e8"
-build_start_time: [1669377943, 37369012]
-build_end_time: [1669377943, 59295177]
+build_start_time: [1669771497, 942440032]
+build_end_time: [1669771497, 964848041]
 inputs:
-  "/Users/user/blueberry/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1669377919, 974847793]
+  "/Users/user/blueberry/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1669771474, 832385540]
   "/Users/user/blueberry/macos/Runner/AppDelegate.swift": !private [1668016546, 0]
   "/Users/user/blueberry/macos/Runner/MainFlutterWindow.swift": !private [1669354042, 675784111]
